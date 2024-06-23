@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="About/Frieren.jpg">
+    <script src="https://kit.fontawesome.com/c1e3482d77.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header>
+        <a href="https://id.pinterest.com/search/pins/?q=frieren&rs=typed" target="_blank">
+            <div class="img"></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner" id="home">
+            <div class="my-name">
+                <h2>Hi My Name Is</h2>
+                <h1>Deryana Maruf</h1>
+            </div>
+        </div>
+        <div class="profile" id="about">
+            <h2>About Me</h2>
+            <div class="img-container" data-aos="fade-up" data-aos-duration="1500">
+                <div class="profile-img a"></div>
+                <div class="profile-img b"></div>
+                <div class="info">
+                    <p>Halo Nama gw <b>Deryana Maruf</b> gw adalah seorang Programer pemula khusunya dibagian <b>Web
+                            Develovepor Front End</b>, gw ingin jadi seorang <b>Full Stack Developer</b> mungkin motto
+                        hidup saya</p>
+                    <p><b><i>"Coba Dulu Kesempatan Tidak Akan Datang Dua Kali"</i></b></p>
+                    <p id="sayang">Btw Frieren Istri Gw</p>
+                </div>
+            </div>
+        </div>
+        <div class="value-main" id="skill">
+            <h2>My Skills..</h2>
+            <div class="value" data-aos="fade-up" data-aos-duration="1500">
+                <div class="value-container">
+                    <i class="fa-brands fa-html5"></i>
+                    <p class="value-info">HTML 5</p>
+                </div>
+                <div class="value-container">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p class="value-info">CSS 3</p>
+                </div>
+                <div class="value-container">
+                    <i class="fa-brands fa-js"></i>
+                    <p class="value-info">Java Script</p>
+                </div>
+                <div class="value-container">
+                    <i class="fa-brands fa-python"></i>
+                    <p class="value-info">Python</p>
+                </div>
+                <div class="value-container">
+                    <i class="fa-brands fa-php"></i>
+                    <p class="value-info">PHP</p>
+                </div>
+                <div class="value-container">
+                    <i class="fa-brands fa-react"></i>
+                    <p class="value-info">React JS</p>
+                </div>
+            </div>
+        </div>
+        <footer id="contact">
+            <h2>Deryana Maruf</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+            </ul>
+            <div class="logo">
+                <a href="https://www.facebook.com/jerri.maruf" target="_blank"><i
+                        class="fa-brands fa-facebook fa-foot"></i></a>
+                <a href="https://www.instagram.com/hi_deri_/" target="_blank"><i
+                        class="fa-brands fa-instagram fa-foot"></i></a>
+                <a href="https://twitter.com/Deriana765" target="_blank"><i
+                        class="fa-brands fa-x-twitter fa-foot"></i></a>
+                <a href="https://github.com/deriana" target="_blank"><i class="fa-brands fa-github fa-foot"></i></a>
+            </div>
+            <div class="bottom"></div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const banner = document.querySelector('.banner');
+        const backgrounds = ["About/fri.png","About/b.jpeg", "About/c.jpg", "About/d.jpg", "About/e.png"];
+        let currentBackground = 0;
+
+        function changeBackground() {
+            banner.style.backgroundImage = `url(${backgrounds[currentBackground]})`;
+            currentBackground = (currentBackground + 1) % backgrounds.length;
+        }
+
+        // Change background every 5 seconds (5000 milliseconds)
+        setInterval(changeBackground, 5000);
+    });
+
+    </script>
+</body>
+
+</html>

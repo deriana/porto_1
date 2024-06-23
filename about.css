@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    gap: 50%;
+    align-items: center;
+    background: #FBF9F1;
+    height: 50px;
+
+    .img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-image: url(About/Frieren.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    li {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+    }
+
+    a:hover {
+        transition: 0.5s;
+        color: gray;
+    }
+}
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(About/fri.png);
+    background-size: cover;
+    opacity: 0.7;
+    display: grid;
+    place-items: center;
+}
+
+.my-name {
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    transition: 0.9s;
+    cursor: default;
+}
+
+.my-name h2 {
+    color: rgb(44, 44, 44);
+    margin-bottom: 20px;
+}
+
+.my-name:hover {
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.profile {
+    width: 100%;
+    background: #FBF9F1;
+    display: grid;
+    place-items: center;
+}
+
+.profile h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(44, 44, 44);
+}
+
+.img-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    opacity: 0.7;
+    transition: 0.9s;
+}
+
+.profile-img:hover {
+    width: 270px;
+    transition: 0.9s;
+}
+
+.a {
+    background-image: url(About/icon.jpg);
+}
+
+.b {
+    margin-top: 50px;
+    background-image: url(About/Frieren\ profile.jpeg);
+}
+
+.info {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.info:hover {
+    background: #d6d2ca15;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+#sayang {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.value-main {
+    width: 100%;
+    background: #E5E1DA;
+    display: grid;
+    place-items: center;
+}
+
+.value-main h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.value {
+    width: 1000px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-bottom: 100px;
+}
+
+.value-container {
+    background: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.value-container:hover {
+    height: 200px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.fa-brands {
+    margin-top: 30px;
+    font-size: 100px;
+
+}
+
+.value-main h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.value-container {
+    .fa-python {
+        color: #306998;
+    } 
+    .fa-html5 {
+        color: #FF4500;
+    } 
+    .fa-css3-alt {
+        color: #387ADF;
+    } 
+    .fa-js {
+        color: #f0db4f;
+    } 
+    .fa-php {
+        color: #5E1675;
+    } 
+    .fa-react {
+        color: #0074a3;
+    } 
+
+}
+
+.value-info {
+    overflow: hidden;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #9c9993;
+    width: 100%;
+    height: 80vh;
+}
+
+footer h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    cursor: default;
+    color: #FBF9F1;
+    transition: 0.5s;
+}
+
+footer h2:hover {
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+footer ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #FBF9F1;
+    transition: 0.5s;
+}
+
+footer li a:hover {
+    border-bottom: 1px solid #FBF9F1;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.fa-foot {
+    font-size: 40px;
+    color: white;
+    transition: 0.5s;
+    margin-bottom: 100px;
+}
+
+.fa-facebook:hover {
+    color: #316FF6;
+    transition: 0.5s;
+    font-size: 45px;
+}
+
+.fa-instagram:hover {
+    font-size: 45px;
+    transition: 0.5s;
+    color: #a70a4b;
+}
+
+.fa-x-twitter:hover {
+    font-size: 45px;
+    transition: 0.5s;
+    color: #222;
+}
+
+.fa-github:hover {
+    font-size: 45px;
+    transition: 0.5s;
+    color: #222;}
+
+.bottom {
+    width: 60%;
+    border: 1px solid white;
+}
